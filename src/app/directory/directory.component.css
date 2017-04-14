@@ -1,0 +1,15 @@
+.blueText {
+    color: blue;
+}
+
+.redText {
+    color: red;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+p {
+    font-size: small;
+}

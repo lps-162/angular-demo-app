@@ -1,0 +1,17 @@
+<p>
+  {{ title }}
+</p>
+
+<!--Name - {{ ninja.name }}
+<br>
+Belt - {{ ninja.belt }}-->
+
+<button (click)="fireYellEvent($event)">Send Event</button>
+
+<button (click)="toggleStuff()">
+  Toggle me
+</button>
+
+<p *ngIf="myBoolean">
+  This should be displayed now
+</p>

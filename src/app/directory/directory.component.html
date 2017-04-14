@@ -1,0 +1,17 @@
+<h3>Ninja Listing</h3>
+<ul id="ninja-listing">
+  <li *ngFor="let ninja of ninjas">
+    <div class="single-ninja">
+      <span [ngStyle]="{background: ninja.belt}">{{ ninja.belt | slice:1:5 }} belt</span>
+      <h3> 
+        <a [routerLink]="['/directory', ninja.id]">
+          {{ ninja.name | uppercase }}
+        </a>
+      </h3>
+    </div>
+  </li>
+</ul>
+
+<h3 [ngClass]="myClasses">
+  Some random text
+</h3>
